@@ -1,3 +1,10 @@
 <h1>Meals 🚀</h1>
-<%= @info['foods']['food'][0]['food_name'] %>
-<%= @info['foods']['food'][0]['food_description'] %>
+<%# <%= @info['foods']['food'][0] %>
+<%= @info['foods']['food'].each do |data| %>
+  <% data.each do |piece| %>
+    <%= "#{piece[0]}: #{piece[1]}" %>
+    <br>
+  <% end %>
+  <div>-----</div>
+<% end %>
+<%# <%= @info['foods']['food'][0]['food_description'] %> %>
