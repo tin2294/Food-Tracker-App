@@ -12,4 +12,12 @@
   </div>
 <% end %>
 
-<%= @info %>
+<% @info['food']['servings']['serving'].each do |fact| %>
+  <div class="nut-facts">
+    <% fact.each do |key, value| %>
+      <div class="nut-fact-child">
+        <%= "#{key}: #{value}" %>
+      </div>
+    <% end %>
+  </div>
+<% end %>
