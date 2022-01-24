@@ -1,8 +1,18 @@
 <h1 class="">FOOD TRACKER 🚀</h1>
 <div class="full h-96 w-full">
   <div class="upper-section h-1/2 flex flex-row w-full mx-14">
-    <div class="search-ingredients h-full w-full basis-1/2 border-2 border-rose-600 rounded-md">
-      Search Bar
+    <div class="search-ingredients h-full w-full basis-1/2 divide-y-4 bg-white flex flex-col">
+      <section class="text-gray-600 relative grid place-content-center place-items-center h-screen">
+        <section class="flex flex-col gap-12 w-3/4 px-10 py-8 rounded-xl shadow bg-gray-200">
+          <h2 class="text-2xl text-center font-semibold">Search Food</h2>
+          <form name="newsletter" class="flex flex-wrap gap-6">
+            <div class="w-full py-2 border-b-2 border-gray-400 flex justify-between gap-3">
+              <input type="text" class="outline-none text-2xl flex-1 px-4 py-3 bg-transparent" placeholder="Enter food name" />
+              <button type="button" class="text-xl font-semibold text-gray-800 px-4 py-2 rounded-lg hover:bg-gray-300 transition flex items-center justify-center">Search</button>
+            </div>
+          </form>
+        </section>
+      </section>
     </div>
     <div class="recipes w-full h-full basis-1/2">
       Either create recipes or search my own
@@ -21,3 +31,20 @@
     </div>
   </div>
 </div>
+
+<main class="divide-y-4 bg-white w-full flex flex-col">
+  <section class="text-gray-600 relative grid place-content-center place-items-center h-screen">
+    <section class="flex flex-col gap-12 w-3/4 px-10 py-8 rounded-xl shadow bg-gray-200">
+      <h2 class="text-2xl text-center font-semibold">Search Food</h2>
+      <form name="newsletter" class="flex flex-wrap gap-6">
+        <div class="w-full py-2 border-b-2 border-gray-400 flex justify-between gap-3">
+          <input type="text" class="outline-none text-2xl flex-1 px-4 py-3 bg-transparent" placeholder="Enter food name" />
+          <button type="button" class="text-xl font-semibold text-gray-800 px-4 py-2 rounded-lg hover:bg-gray-300 transition flex items-center justify-center">Search</button>
+        </div>
+        <label class="w-full flex items-baseline gap-3 font-semibold text-lg">
+          <span>By subscribing to our newsletter, you acknowledge you have read, understood and agree to abide by <a href="#" class="underline">our personal data policy</a>.</span>
+        </label>
+      </form>
+    </section>
+  </section>
+</main>
