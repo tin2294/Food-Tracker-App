@@ -1,22 +1,23 @@
-<h1 class="mb-4 text-3xl font-black">FOOD TRACKER 🚀</h1>
-
-<div class="upper-section max-w-lg mx-auto mt-16 text-center max-w-sm rounded overflow-hidden shadow-lg p-10">
-  <div class="search-ingredients text-lg leading-snug">
-    Search Bar
+<h1 class="">FOOD TRACKER 🚀</h1>
+<div class="full h-96 w-full">
+  <div class="upper-section h-1/2 flex flex-row w-full mx-14">
+    <div class="search-ingredients h-full w-full basis-1/2 border-2 border-rose-600 rounded-md">
+      Search Bar
+    </div>
+    <div class="recipes w-full h-full basis-1/2">
+      Either create recipes or search my own
+      <%# cloudinary to upload pics %>
+    </div>
   </div>
-  <div class="recipes">
-    Either create recipes or search my own
-    <%# cloudinary to upload pics %>
-  </div>
-</div>
-<div class="lower-section">
-  <div class="meal-section max-w-lg mx-auto mt-16 text-center max-w-sm rounded overflow-hidden shadow-lg">
-    Meals
-  </div>
-  <div class="workouts max-w-lg mx-auto mt-16 text-center max-w-sm rounded overflow-hidden shadow-lg">
-    Calories Burned
-  </div>
-  <div class="summary max-w-lg mx-auto mt-16 text-center max-w-sm rounded overflow-hidden shadow-lg">
-    Superavit/deficit
+  <div class="lower-section flex flex-row">
+    <div class="meal-section basis-1/3">
+      Meals
+    </div>
+    <div class="workouts basis-1/3">
+      Calories Burned
+    </div>
+    <div class="summary basis-1/3">
+      Superavit/deficit
+    </div>
   </div>
 </div>
